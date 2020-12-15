@@ -6,7 +6,7 @@ import {Review} from './Review'
 function App() {
   return (
     <>
-      <NavBar />
+      <NavBar /> 
       <Banner />
       <FullMenu />
       <Review />
