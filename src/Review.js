@@ -6,6 +6,26 @@ export const Review = () => {
     const [index, setIndex] = useState(0)
     const {name, job, image, text} = people[index]
 
+    const checkNumber = (number) => {
+        if(number > people.length - 1) return 0
+        if(number < 0) return people.length - 1
+        return number 
+    }
+
+    const prevPerson = () =>{
+        setIndex((index)=> {
+            let newIndex = index + 1
+            return checkNumber(newIndex)
+        })
+    }
+
+    const nextPerson = () => {
+        setIndex((index)=> {
+            let newIndex = index - 1
+            return checkNumber(newIndex)
+        })
+    }
+
     return <main className='review-main'>
         <section className="review-container">
             <div className="review-title">
@@ -20,8 +40,8 @@ export const Review = () => {
                 <p className='job'>{job}</p>
                 <p className='info'>{text}</p>  
                 <div className="review-btn-container">
-                    <button className="prev-btn"><FaChevronLeft/></button>
-                    <button className="next-btn"><FaChevronRight/></button>
+                    <button className="prev-btn" onClick={prevPerson}><FaChevronLeft/></button>
+                    <button className="next-btn" onClick={nextPerson}><FaChevronRight/></button>
                 </div>
             </article>
         </section>
