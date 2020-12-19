@@ -307,7 +307,7 @@ li {
 
 /* reviews */
 .review-main {
-  min-height: 100vh;
+  min-height: 80vh;
   width: 95vw;
   display: flex;
   flex-direction: column;
@@ -380,6 +380,17 @@ li {
 .prev-btn:hover,
 .next-btn:hover {
   color: var(--clr-primary-5);
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
+
+.map-title {
+  margin: 0px auto;
+  padding-bottom: 10px;
 }
 
 @media screen and (min-width: 800px) {
