@@ -3,7 +3,8 @@ import NavBar from './NavBar'
 import Banner from './Banner'
 import FullMenu from './FullMenu'
 import {Review} from './Review'
-import Maps from './Maps'
+import MapContainer from './MapContainer'
+import About from './About'
 function App() {
   return (
     <>
@@ -11,7 +12,8 @@ function App() {
       <Banner />
       <FullMenu />
       <Review />
-      <Maps/>
+      <MapContainer />
+      <About />
     </>
   )
 }

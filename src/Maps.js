@@ -11,14 +11,12 @@ export class Maps extends React.Component{
 
         const mapContainer = {
             display: 'flex',
-            padding: '10px',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignSelf: 'center',
         
         }
         
-        return (<div className="map">
-            <h2 className="map-title">Located</h2>
+        return (
                     <Map
                         google={this.props.google}
                         zoom={15}
@@ -28,7 +26,6 @@ export class Maps extends React.Component{
                     > 
                         <Marker position={{lat: 9.761927, lng: 79.95244}}/>
                     </ Map>
-        </div>
         )
     }
 
