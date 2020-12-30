@@ -5,6 +5,7 @@ import FullMenu from './FullMenu'
 import {Review} from './Review'
 import MapContainer from './MapContainer'
 import About from './About'
+import Footer from './Footer'
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
       <Review />
       <MapContainer />
       <About />
+      <Footer />
     </>
   )
 }

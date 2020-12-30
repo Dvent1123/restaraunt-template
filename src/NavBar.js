@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
+import { Link } from 'react-scroll'
 import { FaBars } from 'react-icons/fa'
 import logo from './rest-logo.jpg'
 
@@ -8,9 +9,13 @@ const NavBar = () => {
                 <img className='logo' src={logo} alt="logo"/>
                 <div className='links-container'>
                   <ul className="links">
-                      <li>
-                          <a href="#">Menu</a>
-                      </li>
+                     <Link
+                     to='menu'
+                     activeClass='active'
+                     spy={true}
+                     smooth='true'>
+                      Menu
+                     </Link>
                         <li>
                           <a href="#">Located</a>
                       </li>

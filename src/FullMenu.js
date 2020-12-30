@@ -19,7 +19,7 @@ const FullMenu = () => {
         setMenuItems(newItems)
     }
 
-    return<section className="menu-section">
+    return<section className="menu-section" id='menu'>
             <div className="menu-title">
                 <h2>Menu</h2>
             </div>
