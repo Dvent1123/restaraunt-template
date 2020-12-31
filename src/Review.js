@@ -26,7 +26,7 @@ export const Review = () => {
         })
     }
 
-    return <main className='review-main'>
+    return <main className='review-main' id='review'>
         <section className="review-container">
             <div className="review-title">
                 <h2>Reviews</h2>
