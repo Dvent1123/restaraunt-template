@@ -47,6 +47,8 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
+  --padding-all: 8rem 0;
+  --padding-mobile: 5rem 0;
 }
 /*
 =============== 
@@ -214,7 +216,7 @@ nav {
 
 /* banner */
 .banner {
-  background-image: url("./louis-hansel-shotsoflouis-u13IpYtZ9I8-unsplash.jpg");
+  background-image: url("./images/banner-pic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -269,7 +271,7 @@ p,
 .menu-section {
   width: 100%;
   margin: 0px auto;
-  padding: 5rem 0rem;
+  padding: var(--padding-mobile);
   background-color: var(--clr-secondary-6);
 }
 
@@ -347,7 +349,7 @@ p,
 .review-main {
   min-height: 80vh;
   width: 100%;
-  padding: 2rem 0rem;
+  padding: var(--padding-mobile);
   display: flex;
   flex-direction: column;
   background-color: var(--clr-secondary-8);
@@ -426,15 +428,15 @@ p,
 .map {
   display: flex;
   flex-direction: column;
-  padding: 50px 0;
-  height: 100vh;
+  padding: var(--padding-mobile);
+  height: 125vh;
   width: 100%;
   background-color: var(--clr-secondary-6);
 }
 
 .map-title {
   margin: 0px auto;
-  padding-bottom: 10px;
+  padding-bottom: 2rem;
 }
 
 /* about */
@@ -443,7 +445,7 @@ p,
   flex-direction: column;
   width: 100%;
   margin: 0px auto;
-  padding: 5rem 0rem;
+  padding: var(--padding-mobile);
   /* justify-content: center; */
   align-items: center;
   background-color: var(--clr-secondary-8);
@@ -497,6 +499,7 @@ p,
   /* Menu */
   .menu-section {
     width: 100%;
+    padding: var(--padding-all);
   }
 
   .menu-center {
@@ -505,6 +508,7 @@ p,
 
   .review-main {
     width: 100%;
+    padding: var(--padding-all);
   }
 
   /* Nav */
@@ -602,12 +606,20 @@ p,
     padding: 0.5rem 1rem;
   } */
 
+  /* Map */
+  .map {
+    padding: var(--padding-all);
+  }
+  .map-title {
+    margin: 0px auto;
+    padding-bottom: 4rem;
+  }
   /* About */
   .about-content {
     display: flex;
     flex-direction: row;
     width: 95vw;
-    padding: 20px 0;
+    padding: var(--padding-all);
   }
   /* 
   .about-content {

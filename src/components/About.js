@@ -1,5 +1,5 @@
 import React from 'react'
-import outside from './petr-sevcovic-fyQr1T3GE34-unsplash.jpg'
+import outside from '../assets/images/outside-rest-pic.jpg'
 
 const About = () => {
     return (

@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-scroll'
 import { FaBars } from 'react-icons/fa'
-import logo from './rest-logo.jpg'
 
 const NavBar = () => {
   const [showLinks, setShowLinks] = useState(false)

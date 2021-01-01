@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import people from './reviewData'
+import people from '../assets/data/reviewData'
 import {FaChevronLeft, FaChevronRight, FaQuoteRight} from 'react-icons/fa'
 
 export const Review = () => {

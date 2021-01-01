@@ -1,11 +1,11 @@
 import React from 'react'
-import NavBar from './NavBar'
-import Banner from './Banner'
-import FullMenu from './FullMenu'
-import {Review} from './Review'
-import MapContainer from './MapContainer'
-import About from './About'
-import Footer from './Footer'
+import NavBar from './components/NavBar'
+import Banner from './components/Banner'
+import FullMenu from './components/Menu/FullMenu'
+import {Review} from './components/Review'
+import MapContainer from './components/Map/MapContainer'
+import About from './components/About'
+import Footer from './components/Footer'
 function App() {
   return (
     <>
