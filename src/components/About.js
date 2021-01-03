@@ -17,7 +17,7 @@ const About = () => {
                     Est, commodi qui blanditiis, placeat vel porro dolorem at excepturi 
                     impedit perferendis odit ducimus unde magni libero dolor eum ratione inventore! Labore!
                 </h3>
-                <img className='about-img' src={outside} alt="restaurant-photo"/>
+                <img className='about-img' src={outside} alt="restaurant"/>
             </div>
 
         </section>
