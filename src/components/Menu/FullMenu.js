@@ -20,7 +20,7 @@ const FullMenu = () => {
 
     return<section className="menu-section" id='menu'>
             <div className="menu-title">
-                <h2>Menu</h2>
+                <h2>Menu Favorites</h2>
             </div>
             <MenuCategories categories={allCategories} filterItems={filterItems}/>
             <Menu items={menuItems} />
