@@ -3,8 +3,8 @@ import outside from '../assets/images/outside-rest-pic.jpg'
 
 const About = () => {
     return (
-        <main className='about-main'>
-        <section className='about-container' id='about'>
+        <main className='about-main' id='about'>
+        <section className='about-container'>
             <div className='about-title-container'>
                 <h2 className='about-title'>About</h2>
             </div>
