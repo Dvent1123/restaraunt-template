@@ -4,6 +4,18 @@ Variables
 ===============
 */
 
+@font-face {
+  font-family: "Tahoma";
+  src: url("./fonts/webFonts/Tahoma/font.woff") format("woff"),
+    url("./fonts/webFonts/Tahoma/font.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "SunsetStripJF";
+  src: url("./fonts/webFonts/SunsetStripJF/font.woff") format("woff"),
+    url("./fonts/webFonts/SunsetStripJF/font.woff2") format("woff2");
+}
+
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(228, 86%, 17%);
@@ -11,11 +23,11 @@ Variables
   --clr-primary-3: hsl(228, 75%, 37%);
   --clr-primary-4: hsl(228, 0%, 0%);
   /* primary/main color */
-  --clr-primary-5: hsl(228, 0%, 0%);
+  --clr-primary-5: hsl(1, 98%, 17%);
   /* lighter shades of primary color */
   --clr-primary-6: hsl(228, 89%, 70%);
   --clr-primary-7: hsl(228, 90%, 76%);
-  --clr-primary-8: hsl(228, 86%, 81%);
+  --clr-primary-8: hsl(25, 100%, 50%);
   --clr-primary-9: hsl(228, 90%, 88%);
   --clr-primary-10: hsl(228, 100%, 96%);
 
@@ -26,11 +38,13 @@ Variables
   --clr-secondary-3: hsl(0, 0%, 68%);
   --clr-secondary-4: hsl(0, 0%, 72%);
   /* secondary primary*/
-  --clr-secondary-5: hsl(206, 13%, 79%);
+  /*Primary Background*/
+  --clr-secondary-5: hsl(1, 100%, 95%);
   /* lighter shades of secondary */
   --clr-secondary-6: hsl(203, 13%, 88%);
-  --clr-secondary-7: hsl(204, 12%, 92%);
-  --clr-secondary-8: hsl(210, 10%, 96%);
+  --clr-secondary-7: hsl(25, 100%, 50%);
+  /*Secondary background*/
+  --clr-secondary-8: hsl(45, 99%, 51%);
   --clr-secondary-9: hsl(0, 0%, 100%);
 
   --clr-white: #fff;
@@ -38,7 +52,7 @@ Variables
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
-  --text-color-primary: hsl(228, 0%, 0%);
+  --text-color-primary: var(--clr-primary-5);
   --clr-black: #222;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
@@ -50,7 +64,7 @@ Variables
   --padding-all: 8rem 0;
   --padding-mobile: 5rem 0;
   --border-radius: 2rem;
-  --border: 0.25rem solid var(--clr-primary-5);
+  --border: 0.15rem solid var(--clr-primary-5);
 }
 /*
 =============== 
@@ -66,8 +80,7 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Tahoma", Tahoma, Verdana, sans-serif;
   background: var(--clr-grey-10);
   color: var(--clr-grey-1);
   line-height: 1.5;
@@ -188,29 +201,47 @@ nav {
 }
 .nav-toggle {
   font-size: 1.5rem;
-  color: var(--clr-primary-9);
+  color: var(--clr-white);
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
 }
 .nav-toggle:hover {
-  color: var(--clr-primary-6);
+  color: var(--clr-primary-5);
   transform: rotate(90deg);
 }
 
-.rest-logo {
-  width: 100%;
-  font-size: 1.5rem;
-  color: var(--clr-white);
-  padding: 1rem;
-  margin: 0;
-  align-self: center;
+.logos {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.pb-logo {
+  object-fit: cover;
+  height: 100px;
+  width: 75px;
+  margin: 0 2rem 0 2rem;
+}
+
+.pb-logo-container {
+  width: 125px;
+  height: 125px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.25rem 2rem 0.25rem 2rem;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 0.25rem solid var(--clr-secondary-8);
 }
 
 .links a {
   background-color: var(--clr-primary-5);
-  color: var(--clr-primary-10);
+  color: var(--clr-white);
   font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -221,7 +252,7 @@ nav {
 }
 .links a:hover {
   background: var(--clr-primary-8);
-  color: var(--clr-primary-1);
+  color: var(--clr-primary-5);
   padding-left: 1.5rem;
 }
 .links-container {
@@ -251,6 +282,11 @@ nav {
   border-radius: var(--border-radius);
 }
 
+.banner-inner h1 {
+  font-family: "SunsetStripJF";
+  color: var(--clr-secondary-8) !important;
+}
+
 .banner-inner h1,
 p,
 .banner-list {
@@ -270,20 +306,20 @@ p,
 .banner-inner a {
   display: inline-block;
   padding: 0.35em 1.2em;
-  border: 0.1em solid #ffffff;
-  background-color: var(--clr-black);
+  border: 0.1em solid var(--clr-black);
+  background-color: var(--clr-white);
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.12em;
   box-sizing: border-box;
   text-decoration: none;
-  font-weight: 300;
-  color: #ffffff;
+  font-weight: 400;
+  color: var(--clr-black);
   text-align: center;
   transition: all 0.3s;
 }
 .banner-inner a:hover {
-  color: #000000;
-  background-color: var(--clr-primary-6);
+  color: var(--clr-white);
+  background-color: var(--clr-secondary-7);
 }
 
 /* menu */
@@ -291,7 +327,7 @@ p,
   width: 100%;
   margin: 0px auto;
   padding: var(--padding-mobile);
-  background-color: var(--clr-white);
+  background-color: var(--clr-secondary-5);
 }
 
 .menu-title {
@@ -328,7 +364,7 @@ p,
 .item-info header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 0.5px dotted;
+  border-bottom: 0.5px dotted var(--clr-secondary-7);
 }
 
 .item-info h4 {
@@ -363,7 +399,7 @@ p,
 }
 
 .filter-category-btn:hover {
-  background: var(--clr-primary-6);
+  background: var(--clr-primary-8);
   color: var(--clr-white);
 }
 
@@ -374,7 +410,7 @@ p,
   padding: var(--padding-mobile);
   display: flex;
   flex-direction: column;
-  background-color: var(--clr-secondary-8);
+  background-color: var(--clr-white);
 }
 
 .review-container {
@@ -415,13 +451,33 @@ p,
   position: relative;
 }
 
+.yelp-img-container {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+}
+
+.yelp-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
 .author {
   margin-bottom: 0.25rem;
 }
 
 .info {
   margin-bottom: 0.75rem;
-  color: var(--clr-primary-3);
+  color: var(--clr-primary-5);
+}
+
+.date {
+  margin-bottom: 0.5rem;
+  color: var(--clr-primary-5);
+  font-size: 0.85rem;
 }
 
 .job {
@@ -444,7 +500,14 @@ p,
 
 .prev-btn:hover,
 .next-btn:hover {
-  color: var(--clr-primary-5);
+  color: var(--clr-secondary-7);
+}
+
+.read-more {
+  text-transform: uppercase;
+}
+.read-more:hover {
+  color: var(--clr-secondary-7);
 }
 
 /* map */
@@ -454,7 +517,7 @@ p,
   padding: var(--padding-mobile);
   height: 125vh;
   width: 100%;
-  background-color: var(--clr-white);
+  background-color: var(--clr-secondary-5);
 }
 
 .map-title {
@@ -465,7 +528,7 @@ p,
 /* about */
 .about-main {
   width: 100%;
-  background-color: var(--clr-secondary-8);
+  background-color: var(--clr-white);
   padding: var(--padding-mobile);
 }
 
@@ -521,10 +584,48 @@ p,
   padding: 10px 30px;
 }
 
+@media screen and (max-width: 400px) {
+  .pb-logo {
+    margin: 0;
+  }
+
+  .pb-logo-container {
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .map {
     padding: var(--padding-all);
     height: 115vh;
+  }
+
+  .pb-logo {
+    margin: 0.15rem 1rem 0.15rem 1rem;
+  }
+
+  .pb-logo-container {
+    margin: 0.15rem 1rem 0.15rem 1rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 620px) {
+  .pb-logo {
+    margin: 0.2rem 8rem 0.2rem 8rem;
+  }
+
+  .pb-logo-container {
+    margin: 0.2rem 8rem 0.2rem 8rem;
+  }
+}
+
+@media screen and (min-width: 620px) and (max-width: 800px) {
+  .pb-logo {
+    margin: 0.25rem 10rem 0.25rem 10rem;
+  }
+
+  .pb-logo-container {
+    margin: 0.25rem 10rem 0.25rem 10rem;
   }
 }
 
@@ -572,7 +673,8 @@ p,
     box-shadow: var(--light-shadow);
     width: 100%;
     position: fixed;
-    flex-direction: initial;
+    display: flex;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -605,6 +707,21 @@ p,
     transform: rotate(90deg);
   }
 
+  .logos {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .pb-logo {
+    margin: 0.25rem 4rem 0.25rem 4rem;
+  }
+
+  .pb-logo-container {
+    margin: 0.25rem 4rem 0.25rem 4rem;
+  }
+
   .rest-logo {
     width: 100%;
     font-size: 1.5rem;
@@ -617,7 +734,7 @@ p,
     width: 90px;
   }
   .links a {
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin: 0 0.5rem;
     text-transform: capitalize;
     letter-spacing: var(--spacing);

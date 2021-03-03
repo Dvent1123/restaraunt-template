@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-scroll'
 import { FaBars } from 'react-icons/fa'
+import pbLogo from '../assets/images/pb-logo.png'
 
 const NavBar = () => {
   const [showLinks, setShowLinks] = useState(false)
@@ -61,12 +62,16 @@ const NavBar = () => {
                 </ul>
               </div>
       </div>
-                    <Link
+              <Link
               to='banner'
               activeClass='active'
               spy={true}
               smooth='true'>
-              <h2 className='rest-logo'>Restaurant Logo Here</h2>
+              <div className="logos">
+                <div className="pb-logo-container">
+                  <img className='pb-logo' src={pbLogo} alt="papa-bears-logo"/>
+                </div>
+              </div>
               </Link>
   </nav>
 }

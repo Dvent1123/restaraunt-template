@@ -5,7 +5,7 @@ const Banner = () => {
     return <section className='banner'>
         <div className="banner-inner">
             <header>
-                <h1>Restaraunt Name Here</h1>
+                <h1>Papa Bear's</h1>
             </header>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br/>
             Perspiciatis, pariatur nobis eligendi assumenda dolor nesciunt ipsa.</p>
