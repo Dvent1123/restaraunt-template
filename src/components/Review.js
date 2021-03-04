@@ -19,12 +19,23 @@ export const Review = () => {
     useEffect(() => {
         const getAllReviews = () => {
             getReviews().then(res => {
-                setReviews(res)
+                console.log(res)
             })
             .catch(err => console.log(err))
         }
         getAllReviews()
-    },[reviews])
+    },[])
+
+
+    // useEffect(() => {
+    //     const getAllReviews = () => {
+    //         getReviews().then(res => {
+    //             setReviews(res)
+    //         })
+    //         .catch(err => console.log(err))
+    //     }
+    //     getAllReviews()
+    // },[reviews])
 
 
     const [index, setIndex] = useState(0)

@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/",
+            "lambdaFunction": "getYelpData",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/"
+        }
+    ],
+    "resourceName": "restarauntapi",
+    "apiName": "restarauntapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "getYelpData"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-restaraunttemplate-dev-104509-authRole",
+        "unAuthRoleName": "amplify-restaraunttemplate-dev-104509-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "getYelpData",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

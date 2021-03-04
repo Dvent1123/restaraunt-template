@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-restaraunttemplate-dev-104509-authRole",
+      "UnauthRoleArn": "arn:aws:iam::461096325822:role/amplify-restaraunttemplate-dev-104509-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::461096325822:role/amplify-restaraunttemplate-dev-104509-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-restaraunttemplate-dev-104509-deployment",
+      "UnauthRoleName": "amplify-restaraunttemplate-dev-104509-unauthRole",
+      "StackName": "amplify-restaraunttemplate-dev-104509",
+      "StackId": "arn:aws:cloudformation:us-east-2:461096325822:stack/amplify-restaraunttemplate-dev-104509/5e84a740-7d11-11eb-a64c-020951ba3322",
+      "AmplifyAppId": "d2kfxg15ztw572"
+    },
+    "categories": {
+      "function": {
+        "getYelpData": {
+          "deploymentBucketName": "amplify-restaraunttemplate-dev-104509-deployment",
+          "s3Key": "amplify-builds/getYelpData-446f6e33385436624f4e-build.zip"
+        }
+      }
+    }
+  }
+}
