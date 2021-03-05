@@ -1,7 +1,6 @@
-import Amplify, { API } from "aws-amplify";
-import aws_exports from "../aws-exports";
-Amplify.configure(aws_exports);
+import { API } from "aws-amplify";
 const apiName = 'restarauntapi'
+
 //just for redeploy
 
 export const getReviews = async () => {
@@ -9,3 +8,4 @@ export const getReviews = async () => {
 
     return res.data || []
 }
+ 
