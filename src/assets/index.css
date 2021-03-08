@@ -263,7 +263,7 @@ nav {
 
 /* banner */
 .banner {
-  background-image: url("./images/banner-pic.jpg");
+  background-image: url("https://hosting.photobucket.com/images/i/Dvent1123/IMG_E3673.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -798,6 +798,7 @@ p,
 
   .about-img {
     width: 49%;
+    height: 70vh;
     border-radius: var(--border-radius);
   }
 }

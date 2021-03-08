@@ -16,26 +16,17 @@ export const Review = () => {
     ]
     const [reviews, setReviews] = useState(defaultReviewObjectArray)
 
+
+
     useEffect(() => {
         const getAllReviews = () => {
             getReviews().then(res => {
-                console.log(res)
+                setReviews(res)
             })
             .catch(err => console.log(err))
         }
         getAllReviews()
     },[])
-
-
-    // useEffect(() => {
-    //     const getAllReviews = () => {
-    //         getReviews().then(res => {
-    //             setReviews(res)
-    //         })
-    //         .catch(err => console.log(err))
-    //     }
-    //     getAllReviews()
-    // },[reviews])
 
 
     const [index, setIndex] = useState(0)
