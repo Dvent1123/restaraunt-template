@@ -1,11 +1,10 @@
-import { API } from "aws-amplify";
+import axios from 'axios'
 const apiName = 'restarauntapi'
-
 //just for redeploy
 
 export const getReviews = async () => {
-    let res = await API.get(apiName, '/')
+    let res = await axios.get(apiName, '/')
 
-    return res.data || []
+    return res || []
 }
  
