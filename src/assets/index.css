@@ -61,8 +61,8 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
-  --padding-all: 8rem 0;
-  --padding-mobile: 5rem 0;
+  --padding-all: 12rem 0;
+  --padding-mobile: 9rem 0;
   --border-radius: 2rem;
   --border: 0.15rem solid var(--clr-primary-5);
 }
@@ -208,7 +208,9 @@ nav {
   cursor: pointer;
 }
 .nav-toggle:hover {
-  color: var(--clr-primary-5);
+  color: var(--clr-primary-8);
+  background: transparent;
+  border-color: transparent;
   transform: rotate(90deg);
 }
 
@@ -629,6 +631,12 @@ p,
   }
 }
 
+@media screen and (min-height: 300px) {
+  .map {
+    padding: 9rem 0;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .banner {
     max-width: 2000px;
@@ -696,15 +704,7 @@ p,
     padding: 0;
   }
   .nav-toggle {
-    font-size: 1.5rem;
-    background: transparent;
-    border-color: transparent;
-    transition: var(--transition);
-    cursor: pointer;
     display: none;
-  }
-  .nav-toggle:hover {
-    transform: rotate(90deg);
   }
 
   .logos {

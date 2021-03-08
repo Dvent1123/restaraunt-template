@@ -1,5 +1,4 @@
 import React from 'react'
-import outside from '../assets/images/outside-rest-pic.jpg'
 
 const About = () => {
     return (
