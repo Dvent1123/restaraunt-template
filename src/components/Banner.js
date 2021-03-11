@@ -7,8 +7,8 @@ const Banner = () => {
             <header>
                 <h1>Papa Bear's</h1>
             </header>
-            <p>Fresh food served 7 days a week!<br/>
-            Open from 6 AM to 2PM daily</p>
+            <p>Open: 7 days a week |  6AM to 2PM<br/>
+                Phone: 928-855-9390 </p>
             <footer>
                 <ul className='banner-list'>
                     <Link

@@ -243,7 +243,7 @@ nav {
 
 .links a {
   background-color: var(--clr-primary-5);
-  color: var(--clr-white);
+  color: white;
   font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -254,7 +254,7 @@ nav {
 }
 .links a:hover {
   background: var(--clr-primary-8);
-  color: var(--clr-primary-5);
+  color: black;
   padding-left: 1.5rem;
 }
 .links-container {
@@ -342,11 +342,12 @@ p,
 }
 
 .menu-center {
-  width: 95vw;
+  width: 80vw;
   margin: 0 auto;
   max-width: 1170px;
   display: grid;
-  gap: 1rem 2rem;
+  grid-template-columns: auto auto;
+  gap: 2.25rem 2rem;
   justify-items: center;
   border-radius: var(--border-radius);
 }
@@ -359,8 +360,9 @@ p,
 
 .menu-photo {
   object-fit: cover;
-  height: 175px;
+  height: 50px;
   width: 100%;
+  max-width: 75px;
   border: 0.25rem solid;
   border-radius: 0.25rem;
   border-color: var(--clr-primary-4);
@@ -373,8 +375,13 @@ p,
   border-bottom: 0.5px dotted var(--clr-secondary-7);
 }
 
+.item-info {
+  font-size: x-small;
+}
+
 .item-info h4 {
   margin-bottom: 0.5rem;
+  font-size: x-small;
 }
 
 .menu-item-text {
@@ -534,7 +541,13 @@ p,
 
 .map-title {
   margin: 0px auto;
-  padding-bottom: 2rem;
+  padding-bottom: 0.25rem;
+}
+
+.map-address {
+  margin: 0px auto;
+  font-size: 1em;
+  padding: 2em;
 }
 
 /* about */
@@ -599,6 +612,21 @@ p,
 
 .copyright {
   padding: 10px 30px;
+}
+
+@media screen and (min-width: 400px) {
+  .menu-photo {
+    height: 100px;
+    width: 100%;
+    max-width: 135px;
+  }
+
+  .item-info {
+    font-size: small;
+  }
+  .item-info h4 {
+    font-size: medium;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -670,8 +698,8 @@ p,
   }
 
   .menu-center {
-    width: 100%;
-    gap: 2rem 3rem;
+    /* width: 100%; */
+    gap: 4rem 3rem;
   }
 
   .review-main {
@@ -687,18 +715,28 @@ p,
   .filter-category-btn {
     font-size: 1.25rem;
   }
+
   .menu-photo {
     height: 300px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .item-info {
+    font-size: medium;
+  }
+  .item-info h4 {
+    font-size: large;
   }
 
   /* Nav */
   nav {
-    box-shadow: var(--light-shadow);
     width: 100%;
     position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: none;
   }
 
   .nav-center {
@@ -777,7 +815,7 @@ p,
   }
   .map-title {
     margin: 0px auto;
-    padding-bottom: 4rem;
+    padding-bottom: 0rem;
   }
   /* About */
   .about-main {

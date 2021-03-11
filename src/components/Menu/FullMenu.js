@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Menu from './Menu';
 import MenuCategories from './MenuCategories'
 import items from '../../assets/data/data'
-import pdf from '../../assets/menu.pdf'
+import pdf from '../../assets/menu-compressed.pdf'
 
 const allCategories = ['all', ...new Set(items.map((item)=> item.category))]
 

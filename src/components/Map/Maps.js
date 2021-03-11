@@ -22,9 +22,9 @@ export class Maps extends React.Component{
                         zoom={15}
                         style={mapStyles}
                         containerStyle={mapContainer}
-                        initialCenter={{lat: 9.761927, lng: 79.95244}}
+                        initialCenter={{lat: 34.467062425978874, lng: -114.33709755599558}}
                     > 
-                        <Marker position={{lat: 9.761927, lng: 79.95244}}/>
+                        <Marker position={{lat: 34.467062425978874, lng: -114.33709755599558}}/>
                     </ Map>
         )
     }
