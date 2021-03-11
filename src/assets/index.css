@@ -550,6 +550,10 @@ p,
   padding: 2em;
 }
 
+.map-address a {
+  color: var(--clr-primary-8);
+}
+
 /* about */
 .about-main {
   width: 100%;

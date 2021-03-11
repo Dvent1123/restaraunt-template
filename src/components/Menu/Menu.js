@@ -1,5 +1,4 @@
 import React from 'react'
-// import barbecue from '../../assets/images/barbecue.jpg'
 
 const Menu = ({items}) => {
     return <div className="menu-center">
