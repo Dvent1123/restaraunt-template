@@ -30,7 +30,7 @@ export const Review = () => {
 
 
     const [index, setIndex] = useState(0)
-    const {name, profile_url: job, date , image_url: image, text} = reviews[index]
+    const {name, date, image_url: image, text} = reviews[index]
 
 
     const checkNumber = (number) => {

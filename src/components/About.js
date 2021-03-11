@@ -10,13 +10,10 @@ const About = () => {
             <div className="about-content">
                 <div className="about-text-container">
                     <h3 className="about-text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Error quasi laboriosam nemo, nisi similique nam quam asperiores ullam nesciunt repellendus? 
-                        Autem ratione nulla eos suscipit, obcaecati sapiente et officiis eaque.
-                        <br/>
-                        <br/>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Est, commodi qui blanditiis, placeat vel porro dolorem at excepturi 
-                        impedit perferendis odit ducimus unde magni libero dolor eum ratione inventore! Labore!
+                        Papa Bear's Restaurant opened its doors in September 2004. 
+                        We are local and family-owned. Despite having served our Lake Havasu City 
+                        community for over a decade, our menu, quality of food, and friendly service remain the same. 
+                        We are dedicated to providing you a home-cooked breakfast and lunch experience every time!
                     </h3>
                 </div>
                 <img className='about-img' src="https://hosting.photobucket.com/images/i/Dvent1123/IMG_E3718.JPG" alt="restaurant"/>
