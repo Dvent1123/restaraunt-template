@@ -609,6 +609,7 @@ nav {
   align-items: center;
   background-color: var(--clr-primary-5);
   text-transform: capitalize;
+  color: white;
 }
 
 .copyright {
