@@ -11,7 +11,7 @@ const About = () => {
                 <div className="about-text-container">
                     <h3 className="about-text">
                         Papa Bear's Restaurant opened its doors in September 2004. 
-                        We are local and family-owned. Despite having served our Lake Havasu City 
+                        We are local and family-owned. Having served our Lake Havasu City 
                         community for over a decade, our menu, quality of food, and friendly service remain the same. 
                         We are dedicated to providing you a home-cooked breakfast and lunch experience every time!
                     </h3>
