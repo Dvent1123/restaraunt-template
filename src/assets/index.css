@@ -290,7 +290,7 @@ nav {
 }
 
 .banner-inner h1,
-p,
+.banner-inner p,
 .banner-list {
   display: flex;
   flex-direction: column;
