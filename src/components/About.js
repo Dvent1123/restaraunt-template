@@ -16,9 +16,7 @@ const About = () => {
                         We are dedicated to providing you a home-cooked breakfast and lunch experience every time!
                     </h3>
                 </div>
-                <img className='about-img' src="https://hosting.photobucket.com/images/i/Dvent1123/IMG_E3718.JPG" alt="restaurant"/>
             </div>
-
         </section>
         </main>
 

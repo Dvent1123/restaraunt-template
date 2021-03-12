@@ -533,7 +533,7 @@ p,
 .map {
   display: flex;
   flex-direction: column;
-  padding: var(--padding-mobile);
+  padding-bottom: 9rem;
   height: 125vh;
   width: 100%;
   background-color: var(--clr-secondary-5);
@@ -558,24 +558,27 @@ p,
 .about-main {
   width: 100%;
   background-color: var(--clr-white);
-  padding: var(--padding-mobile);
 }
 
 .about-container {
+  background-image: url("https://hosting.photobucket.com/images/i/Dvent1123/IMG_E3718.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  width: 80vw;
+  width: 100vw;
   margin: 0px auto;
   align-items: center;
-  border-radius: var(--border-radius);
+  justify-content: center;
 }
 
 .about-title {
-  margin-bottom: 4rem;
+  margin: 2rem 0;
 }
 
 .about-content {
   margin: 0 auto;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -589,19 +592,13 @@ p,
   border: var(--border);
   border-radius: var(--border-radius);
   margin-bottom: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .about-text {
   margin: 1rem 1rem;
   line-height: 1.75em;
   text-transform: none;
-}
-
-.about-img {
-  width: 80vw;
-  max-height: 400px;
-  max-width: 400px;
-  border-radius: var(--border-radius);
 }
 
 .page-footer {
@@ -653,7 +650,6 @@ p,
 
 @media screen and (max-width: 500px) {
   .map {
-    padding: var(--padding-all);
     height: 115vh;
   }
 
@@ -688,7 +684,8 @@ p,
 
 @media screen and (min-height: 300px) {
   .map {
-    padding: 9rem 0;
+    padding-top: 2rem;
+    padding-bottom: 11rem;
   }
 }
 
@@ -710,7 +707,6 @@ p,
   }
 
   .menu-center {
-    /* width: 100%; */
     gap: 4rem 3rem;
   }
 
@@ -822,7 +818,8 @@ p,
 
   /* Map */
   .map {
-    padding: var(--padding-all);
+    padding-top: 6rem;
+    padding-bottom: 12rem;
     height: 125vh;
   }
   .map-title {
@@ -832,19 +829,16 @@ p,
   /* About */
   .about-main {
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--padding-all);
+    padding: 0;
+    /* padding: var(--padding-all); */
   }
 
   .about-container {
     width: 80vw;
-  }
-
-  .about-content {
-    display: flex;
-    flex-direction: row;
   }
 
   .about-text-container {
@@ -862,10 +856,10 @@ p,
     font-size: 1em;
   }
 
-  .about-img {
+  /* .about-img {
     width: 49%;
     border-radius: var(--border-radius);
-  }
+  } */
 }
 
 /* 4k monitors */
