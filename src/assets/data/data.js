@@ -26,11 +26,11 @@ const menu = [
   },
   {
     id: 4,
-    title: 'Classic Hamburger',
+    title: 'Havasu Burger',
     category: 'lunch',
-    price: '8.50',
+    price: '11.00',
     img: 'https://hosting.photobucket.com/images/i/Dvent1123/IMG_E3833.JPG',
-    desc: 'A classic burger served with lettuce, tomatoes, and pickles',
+    desc: 'A half pound burger patty served on grilled sourdough garlic-cheese bread',
   },
   {
     id: 5,
@@ -58,7 +58,7 @@ const menu = [
   },
   {
     id: 8,
-    title: 'Southwest omelette',
+    title: 'Southwest Omelette',
     category: 'breakfast',
     price: '11.00',
     img: 'https://hosting.photobucket.com/images/i/Dvent1123/IMG_E3777.JPG',
@@ -102,7 +102,7 @@ const menu = [
     category: 'breakfast',
     price: '10.75',
     img: 'https://hosting.photobucket.com/images/i/Dvent1123/IMG_E3668.JPG',
-    desc: 'Canadian ham with melted cheese in the middle and best served with country potatoes',
+    desc: 'Home-made ham pieces with melted cheese in the middle and best served with country potatoes',
   },
 ];
 export default menu;
