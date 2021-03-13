@@ -86,7 +86,7 @@ const menu = [
     category: 'breakfast',
     price: '9.25',
     img: 'https://hosting.photobucket.com/images/i/Dvent1123/IMG_E3691.JPG',
-    desc: `carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird  `,
+    desc: 'A burrito stuffed with bacon, country potatoes, eggs, and mixed cheese served with a side of fruit. ',
   },
   {
     id: 12,
