@@ -168,6 +168,27 @@ p {
 
 /*  global classes */
 
+
+
+/* Closing Message */
+.closing{
+  padding: 125px 0em 0em 0em;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.closing-header{
+  text-align: center;
+  font-size: 60%;
+  margin: 0;
+  padding: 2em 0;
+}
+
 /*
 =============== 
 Navbar
@@ -691,6 +712,18 @@ nav {
 }
 
 @media screen and (min-width: 750px) {
+
+  .closing{
+    padding: 150px 0em 0em 0em;
+  }
+  
+  
+  .closing-header{
+    font-size: 150%;
+    padding: 2.25em 0;
+  }
+  
+
   .banner {
     max-width: 2000px;
   }
