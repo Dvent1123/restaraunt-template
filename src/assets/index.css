@@ -762,6 +762,7 @@ nav {
     height: 300px;
     width: 100%;
     max-width: none;
+    min-width: 300px;
   }
 
   .item-info {
@@ -894,6 +895,18 @@ nav {
     width: 49%;
     border-radius: var(--border-radius);
   } */
+}
+
+@media screen and (min-width: 950px) {
+  .menu-photo {
+    min-width: 400px;
+  }
+}
+
+@media screen and (min-width: 1160px) {
+  .menu-photo {
+    min-width: 500px;
+  }
 }
 
 /* 4k monitors */
